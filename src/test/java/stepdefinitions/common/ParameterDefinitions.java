@@ -1,10 +1,14 @@
-package starter.stepdefinitions;
+package stepdefinitions.common;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.ParameterType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import net.thucydides.core.pages.PageObject;
+
+import java.time.Duration;
 
 public class ParameterDefinitions {
 
@@ -17,4 +21,5 @@ public class ParameterDefinitions {
     public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
     }
+
 }

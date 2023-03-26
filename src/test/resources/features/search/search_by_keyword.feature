@@ -1,7 +1,8 @@
 Feature: Search by keyword
 
+  @Searching
   Scenario: Searching for a term
-    Given Sergey is researching things on the internet
-    When he looks up "Cucumber"
-    Then he should see information about "Cucumber"
+    Given I researching things on the internet
+    When I looks up "Cucumber"
+    Then I should see information about "Cucumber"
 

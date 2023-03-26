@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Testing" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+    <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk-11" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="CUCUMBER_CORE_VERSION" value="5" />
+    <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/" />
+    <option name="GLUE" value="stepdefinitions pages net.serenitybdd.cucumber.actors" />
+    <option name="MAIN_CLASS_NAME" value="net.serenitybdd.cucumber.cli.Main" />
+    <module name="cucumber-starter" />
+    <option name="NAME_FILTER" value="^Searching for a term$" />
+    <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --tags &quot;@Grid_Scenario_1&quot;" />
+    <shortenClasspath name="NONE" />
+    <option name="SUGGESTED_NAME" value="Scenario: Searching for a term" />
+    <option name="VM_PARAMETERS" value="-Denvironment=demoaspawesome" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="io.cucumber.core.cli.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
