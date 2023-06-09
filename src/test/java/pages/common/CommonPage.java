@@ -13,5 +13,11 @@ public class CommonPage extends PageObject {
         WebElementFacade selector = $("(//div[@data-g='Menu']//*[contains(@class,'awe-cbc')]/following::*[text()='" + groupName + "'])[1]");
         return selector;
     }
+
+    public WebElementFacade PAGE_CONTROL_LABEL(String labelText) {
+        return $(String.format("//*[contains(text(),'%s')]", labelText));
+
+    }
+
 }
 

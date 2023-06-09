@@ -1,11 +1,11 @@
 package stepdefinitions.Search;
 
-import io.cucumber.java.en.*;
-import net.thucydides.core.pages.PageObject;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.ensure.Ensure;
-import org.assertj.core.api.AbstractBooleanAssert;
-import org.assertj.core.api.Assertions;
+import net.thucydides.core.pages.PageObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.DemoASPAwesemoPage;
@@ -13,8 +13,6 @@ import pages.NavigateTo;
 import pages.common.CommonPage;
 import starter.search.LookForInformation;
 import starter.search.WikipediaArticle;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 //import static actors.ActorList.*;
 
 public class SearchStepDefinitions extends PageObject {
@@ -28,7 +26,7 @@ public class SearchStepDefinitions extends PageObject {
     @Given("{actor} researching things on the internet")
     public void researchingThings(Actor actor) {
         user = actor;
-        user.wasAbleTo(NavigateTo.theWikipediaHomePage());
+        user.wasAbleTo(NavigateTo.thePage("WIKIHOMEPAGE"));
     }
 
     @When("I looks up {string}")

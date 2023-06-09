@@ -8,10 +8,10 @@
     <option name="MAIN_CLASS_NAME" value="net.serenitybdd.cucumber.cli.Main" />
     <module name="cucumber-starter" />
     <option name="NAME_FILTER" value="^Searching for a term$" />
-    <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --tags &quot;@Grid_Scenario_1&quot;" />
+    <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --tags &quot;@ReferAFriend_Scenario_1&quot;" />
     <shortenClasspath name="NONE" />
     <option name="SUGGESTED_NAME" value="Scenario: Searching for a term" />
-    <option name="VM_PARAMETERS" value="-Denvironment=demoaspawesome" />
+    <option name="VM_PARAMETERS" value="-Denvoronment=&quot;amaysim_dev&quot; -Dwebdriver.driver=&quot;chrome&quot;" />
     <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
     <extension name="coverage">
       <pattern>

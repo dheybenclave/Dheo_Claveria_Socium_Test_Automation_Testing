@@ -1,31 +1,56 @@
-Dheo Claveria - Socium - Test Interview - Test Automation Testing
+Dheo Claveria - Test Interview - Test Automation Testing
 
 Programming Language: Java
 Automation Tools : Selenium WebDriver, Serenity BDD, Cucumber, Screenplay
 IDE : IntelliJ (community edition)
-Website Application tested : https://demo.aspnetawesome.com/
+Website Application tested : www.amaysim.com.au
 
-Test Challenge:
-You are requested to write an automated test targeting thehttps://demo.aspnetawesome.com/, that will allow the user to input an Id inorder to return all the values in a row of the dynamic web table (please refer to the image).
+**Test Challenge:**
+The test automation URL is www.amaysim.com.au
 
-1. Proper usage of the Gherkin Language (Done) 
-2. The Code Structure (Done)
-3. The Libraries used (Done)
+Write a test automation script that exercises one of the most basic functions of MyAmaysim:
+Refer A Friend.
 
-The test should be written in a BDD format preferably Cucumber and Java asprogramming language. 
-Please list down all references done in order to complete this challenge.
+Using the provided credentials (amaysim number: 0466134574, password: AWqasde321),
+create a simple test that logs into MyAmaysim, picks a service (if you are presented with more
+than one on logging in), goes to “Refer a Friend” and validates functionalities on this page.
 
-Extracting a report from the executed tests is considered a plus, although it’s not necessary.
+Assume that these tests will eventually need to run against various test environments (each
+environment has a different URL. The URL provided above is that of the Production
+environment).
+
+**Deliverables**
+* An executable test suite that validates the functionality above is working correctly
+* Full source code available online
+
+**Technical Guidance / Hints**
+
+* Prioritise Quality over Quantity in your tests. Your code submission will be assessed
+more on how well written and how well structured the code is, rather than number of
+tests. The most important functionality on the ‘Refer a friend’ page is the ability to
+create personalised links.
+
+* It’s important that other engineers in your team be able to run the tests on their
+machine. Bear in mind they may not all use the same OS as you. Please make it easy
+for them to do so (e.g., having a README with instructions, having dependency
+management in place, etc)
+
+* The code eventually must be able to execute on CI/CD agents. Please think about what
+you can do to facilitate this (e.g. make it easy to run test from command line instead
+of via an IDE or similar)
+
+* Your next stage of the interview process may include a pair programming exercise
+where you will extend/add more functionality to this automation suite
 
 ========================================================================================================
 
 You can test it locally using the following steps:
 
 1. Install IntellJ community edition              : https://www.jetbrains.com/idea/download/#section=windows
-2. Open command and clone the repo                : git clone https://github.com/dheybenclave/Dheo_Claveria_Socium_Test_Automation_Testing.git
+2. Open command and clone the repo                : git clone https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing.git
 3. Open the IntellJ and Open the Project as Maven
 4. You can test via :
         IntellJ config 
-        using the cmmnd > "mvn clean verify"
+        using the cmmnd > "mvn clean verify -Dtags="Amaysime"
         Go to src/test/resources/features/grid/gridtesting.feature and you will the green triangle(start) button and click
    

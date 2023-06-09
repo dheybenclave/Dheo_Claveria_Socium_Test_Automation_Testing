@@ -1,25 +1,14 @@
 package pages;
 
-import io.cucumber.java.en.Given;
-import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.common.CommonPage;
 
-public class NavigateTo {
+public class NavigateTo extends PageObject {
     public static Logger logger = LoggerFactory.getLogger(Thread.currentThread().getStackTrace()[1].getClassName());
-    CommonPage commonPage;
-    Actor dheo;
-
-    public static Performable theWikipediaHomePage() {
-        return Task.where("{0} opens the Wikipedia home page",
-                Open.browserOn().the(WikipediaHomePage.class));
-    }
-
     public static Performable thePage(String homePage) {
 
         logger.info(String.format("Navigate Page to %s", homePage));
@@ -28,16 +17,16 @@ public class NavigateTo {
 
         switch (homePage.toUpperCase()) {
             case "DEMOASPAWESOMEPAGE":
-                openURL = Task.where("{0} opens the Demo ASP Awesome Page", Open.browserOn().the(DemoASPAwesemoPage.class));
+                openURL = Task.where("{0} opens the Demo ASP Awesome Application Page", Open.browserOn().thePageNamed("pages.demoaspawesome"));
                 break;
             case "WIKIHOMEPAGE":
-                openURL = Task.where("{0} opens the Wikipedia Page", Open.browserOn().the(WikipediaHomePage.class));
+                openURL = Task.where("{0} opens the Wikipedia Application Page", Open.browserOn().thePageNamed("pages.wiki"));
+                break;
+            case "AMAYSIMPAGE":
+                openURL = Task.where("{0} opens the Amaysim Application Page", Open.browserOn().thePageNamed("pages.amaysim"));
                 break;
         }
-
         return openURL;
-
-
     }
 
 

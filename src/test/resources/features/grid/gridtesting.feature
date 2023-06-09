@@ -7,23 +7,23 @@ Feature: Grid Filtering Testing
     And I go to Grid > Filtering > Misc modules
     Then I verify the grid filter using parent control element
     And I filter the grid using the following :
-      | control  | field   | value         |
-      | textbox  | person  | Earl          |
-      | textbox  | food    | Soup          |
-      | dropdown | country | Elwynn Forest |
-      | dropdown | country | any country   |
+      | control  | field   | value       |
+      | textbox  | person  | Tracy       |
+      | textbox  | food    | Oat meal    |
+      | dropdown | country | Greville    |
+      | dropdown | country | any country |
 #  Get Multple result in grid
     Then I validate the grid result using the following :
-      | Id   | Person | Food | Country    | Date      | Chef                      |
-      | 1719 | Earl   | Soup | Sylvanaar  | 6/15/2012 | University Chronos Timpus |
-      | 1803 | Earl   | Soup | Piccadilly | 4/9/2013  | Pepper Tomato             |
+      | Id   | Person | Food     | Country   | Date      | Location | Chef             |
+      | 1447 | Tracy  | Oat meal | Orgrimmar | 7/17/2019 | Home     | Chronos Timpus   |
+      | 1873 | Tracy  | Oat meal | Greville  | 3/23/2010 | Visit    | Fromage Sandwich |
 #  Get Specific result in grid
     And I filter the grid using the following :
       | control | field | value |
       | textbox | food  | Apple |
     Then I validate the grid result using the following :
-      | Id   | Person | Food  | Country   | Date      | Chef           |
-      | 2021 | Earl   | Apple | Stormwind | 10/7/2018 | Phoebe Phoebes |
+      | Id   | Person | Food  | Country    | Date      | Location | Chef         |
+      | 2021 | Tracy  | Apple | Piccadilly | 8/15/2014 | Home     | Hercules Oat |
     Examples:
       | Page               |
       | DEMOASPAWESOMEPAGE |
