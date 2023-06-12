@@ -15,9 +15,9 @@ You can test it locally using the following steps:
 4. Make sure you install the java JDK 11 on your local machine and set in the enviroment variables : 
 5. You can test via IntellJ config using the cmmnd > 
         
-              * "mvn clean verify -Dtags="Amaysim"                 : for all test suite created for Amaysim including the validation of [Page and Refer a Friend]
-              * "mvn clean verify -Dtags="Page"                    : for all testing of Page in the dashboard [Service, Account, Help] Page 
-              * "mvn clean verify -Dtags="ReferAFriend_Scenario_1" : for all testing of Page in the dashboard [Service, Account, Help] Page 
+              * "mvn clean verify -Dtags="Amaysim"       : for all test suite created for Amaysim including the validation of [Page and Refer a Friend]
+              * "mvn clean verify -Dtags="Page"          : for all testing of Page in the dashboard [Service, Account, Help] Page 
+              * "mvn clean verify -Dtags="ReferAFriend1" : for Testing the Refer a Friend Page Functionalitist 
 
  6. Or Using IntellJ :
      Go to src/test/resources/features/grid/gridtesting.feature and you will the green triangle(start) button and click for specific run
