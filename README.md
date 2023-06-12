@@ -13,18 +13,18 @@ You can test it locally using the following steps:
 2. Open command and clone the repo                : git clone https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing.git
 3. Open the IntellJ and Open the Project as Maven
 4. Make sure you install the java JDK 11 on your local machine and set in the enviroment variables : 
-5. You can test via :
-        IntellJ config 
-        using the cmmnd > 
-              * "mvn clean verify -Dtags="Amaysim" : for all test suite created for Amaysim including the validation of [Page and Refer a Friend]
-              * "mvn clean verify -Dtags="Page"    : for all testing of Page in the dashboard [Service, Account, Help] Page 
-              * "mvn clean verify -Dtags="Page"    : for all testing of Page in the dashboard [Service, Account, Help] Page 
-         Or Using IntellJ : 
-              * Go to src/test/resources/features/grid/gridtesting.feature and you will the green triangle(start) button and click for specific run
-              * Or using the Run.xml for global testing using tags
-                  * ![image](https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing/assets/24590531/7afb9074-4db6-4c5e-b6a5-796d4d33624d)
-                  * ![image](https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing/assets/24590531/0d13caf5-0e75-4b4c-8392-81ac40ebf7ac)
+5. You can test via IntellJ config using the cmmnd > 
+        
+              * "mvn clean verify -Dtags="Amaysim"                 : for all test suite created for Amaysim including the validation of [Page and Refer a Friend]
+              * "mvn clean verify -Dtags="Page"                    : for all testing of Page in the dashboard [Service, Account, Help] Page 
+              * "mvn clean verify -Dtags="ReferAFriend_Scenario_1" : for all testing of Page in the dashboard [Service, Account, Help] Page 
 
+ 6. Or Using IntellJ :
+     Go to src/test/resources/features/grid/gridtesting.feature and you will the green triangle(start) button and click for specific run
+     ![image](https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing/assets/24590531/eac399d3-a2b7-4f49-9b7c-56238924af1f)
+     Or using the Run.xml for global testing using tags: click the edit config > update the tags in Program Arguments > Save > run
+     ![image](https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing/assets/24590531/0d13caf5-0e75-4b4c-8392-81ac40ebf7ac)
+     ![image](https://github.com/dheybenclave/Dheo_Claveria_Test_Automation_Testing/assets/24590531/7afb9074-4db6-4c5e-b6a5-796d4d33624d)
 
 
 **Test Challenge:**
