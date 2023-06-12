@@ -1,6 +1,6 @@
 Feature: UI Smoke Testing - Amaysim Page
 
-  @UISmoke @Amaysim @Page_Scenario_1 @Service
+  @UISmoke @Amaysim @Page_Scenario_1 @Service @Page
   Scenario Outline: Validate and Verify the Service Page
     Given I login in the application <Page> as <User>
     Then I verify the dashboard page
@@ -16,7 +16,7 @@ Feature: UI Smoke Testing - Amaysim Page
       | Page        | User     |
       | AMAYSIMPAGE | Customer |
 
-  @UISmoke @Amaysim @Page_Scenario_2 @Account
+    @UISmoke @Amaysim @Page_Scenario_2 @Account @Page
   Scenario Outline: Validate and Verify the Account Page
     Given I login in the application <Page> as <User>
     Then I verify the dashboard page
@@ -31,7 +31,7 @@ Feature: UI Smoke Testing - Amaysim Page
       | Page        | User     |
       | AMAYSIMPAGE | Customer |
 
-  @UISmoke @Amaysim @Page_Scenario_3 @Help
+  @UISmoke @Amaysim @Page_Scenario_3 @Help @Page
   Scenario Outline: Validate and Verify the Help Page
     Given I login in the application <Page> as <User>
     Then I verify the dashboard page
