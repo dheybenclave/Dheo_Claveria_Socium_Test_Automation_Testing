@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         glue = {"stepdefinitions"},
-        tags= "@Grid_Scenario_1",
+        tags= "@Page_Scenario_1",
         features = "src/test/resources/features"
 )
 public class CucumberTestSuite {}
